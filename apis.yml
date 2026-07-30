@@ -1,7 +1,25 @@
 aid: lready
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lready.png
 name: Lready
-description: Lready is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Lready, Inc. was the original 2007 incorporated name of Life360 — the
+  family safety and location-sharing company that rebranded to Life360, Inc. in October
+  2011. Life360 operates a consumer mobile platform (iOS and Android) for real-time
+  family location sharing, driving safety, crash detection, roadside and emergency
+  response, and is publicly traded. This profile resolves the "Lready" venture-portfolio
+  lead to its operating entity, Life360, and captures the security posture the company
+  exposes at its production domain. Life360 does not publish a public first-party developer
+  API program or OpenAPI, so no API-surface artifacts are derived here.'
 url: https://raw.githubusercontent.com/api-evangelist/lready/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,18 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-resolved-entity: Life360, Inc. (formerly LReady, Inc.)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Location Sharing
+- Family Safety
+- Mobile App
+- Consumer
+- Safety
+- Location
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/lready-vulnerability-disclosure.yml
+- type: Security
+  url: security/lready-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/lready-domain-security.yml
 - type: Website
   url: https://life360.com
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
